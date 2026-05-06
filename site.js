@@ -1,12 +1,16 @@
 // Centralised configuration for the static site.
 // Edit the URL below once you’ve created/customised your Google Form.
 
-const SIGNUP_FORM_URL = "https://forms.gle/REPLACE_ME";
+const SIGNUP_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeMGYl7zShqS2wK8KQbgLxn_6QZ76BqxhCKkeny4cI92czZ3A/viewform?usp=sharing&ouid=118127600199843286922";
 
 function applySignupLinks() {
   const links = document.querySelectorAll("[data-signup-link]");
   for (const a of links) {
-    a.setAttribute("href", SIGNUP_FORM_URL);
+    const existingHref = a.getAttribute("href");
+    if (!existingHref || existingHref === "#" || existingHref.includes("REPLACE_ME")) {
+      a.setAttribute("href", SIGNUP_FORM_URL);
+    }
     a.setAttribute("target", "_blank");
     a.setAttribute("rel", "noreferrer");
   }

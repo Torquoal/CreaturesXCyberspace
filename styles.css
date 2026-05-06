@@ -161,6 +161,14 @@ nav.site-nav {
   background: #141414;
 }
 
+/* Homepage signup: Raleway + shrink-to-text inside centered grid column */
+[data-signup-link] {
+  font-family: var(--font-display);
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
+}
+
 .btn-small {
   padding: 9px 12px;
   font-size: 0.95rem;
@@ -249,6 +257,8 @@ section {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
+  text-align: left;
+  font-weight: 600;
 }
 
 .list li {
@@ -388,11 +398,17 @@ footer.site-footer {
 
 .banner {
   height: clamp(180px, 28vw, 280px);
-  display: grid;
-  place-items: center;
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, rgba(42, 42, 42, 0.06), rgba(42, 42, 42, 0.02));
-  color: var(--faint);
+  padding: 0;
+  overflow: hidden;
+  background: rgba(42, 42, 42, 0.04);
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .organiser-photo {
@@ -435,6 +451,10 @@ footer.site-footer {
   text-align: left;
   margin: 0 0 12px;
   color: var(--muted);
+}
+
+.paper[aria-label="Call for participation"] {
+  text-align: left;
 }
 
 .paper p:last-child {
