@@ -9,26 +9,18 @@ Simple multi-page static website to advertise a workshop and link to a Google Fo
 - `schedule.html`: Location, date/time, and a draft schedule
 - `outputs.html`: Placeholder page for positionality paragraphs, themes, and outputs
 
-## Customise the signup link (Google Form)
-
-Edit `site.js`:
-
-- Replace `SIGNUP_FORM_URL` with your Google Form URL.
-- All “Sign up” buttons across the site update automatically.
-
 ## Run locally
 
 You can open `index.html` directly, or run a tiny local server.
 
-### Option A: Python (if installed)
-
+### Option A: Python 
 ```bash
 python -m http.server 5173
 ```
 
 Then open `http://localhost:5173`.
 
-### Option B: Node (if installed)
+### Option B: Node 
 
 ```bash
 npx serve .
