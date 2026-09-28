@@ -1,5 +1,4 @@
-// Centralised configuration for the static site.
-// Edit the URL below once you’ve created/customised your Google Form.
+
 
 const SIGNUP_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeMGYl7zShqS2wK8KQbgLxn_6QZ76BqxhCKkeny4cI92czZ3A/viewform?usp=sharing&ouid=118127600199843286922";
